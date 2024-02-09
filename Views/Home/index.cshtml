@@ -1,0 +1,48 @@
+@model List<moment2.Models.PlaylistModel>
+@{
+    ViewData["Title"] = "Startsida";
+}
+<div class="main">
+    
+    <!--Skriver ut texten som finns i ViewBag-->
+    <p class="viewbag">@ViewBag.Message</p>
+
+    <div class=parent>
+
+        <div class="child1">
+            <h2>THE TORTURED POETS DEPARTMENT</h2>
+            <h3>New album out April 19 </h3>
+
+            <img alt="albumcover" src="~/images/albumcover2.jpg">
+            
+
+        </div>
+
+        <div class="child2">
+
+            <div class="top-songs">
+            <h3>My playlist</h3>
+            <p>My favorite songs:</p>
+                <!--Skriver ut alla songs som finns i playlist.json-->
+                @foreach(var song in Model){
+                    <div class="singlesong">
+                        Song: @song.Song <br>
+                        Album: @song.Album (@song.AlbumVersion)<br>
+                        Year: @song.Year <br>
+                        Genre: @song.Genre <br>
+                        Feelings:
+                        @foreach (var tag in song.Tags)
+                        {
+                            <span>@tag</span>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!--Skriver ut Partial-->
+    <div class="news">
+        <partial name="_MyPartialView" />
+    </div>
+</div>

@@ -1,0 +1,195 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width:600px){
+  
+
+
+.main{
+  padding:20px;
+}
+
+.body{
+  background-color: #edece8;
+}
+
+.logo{
+  font-size: 2.5em;
+  padding-left:20px;
+  padding-top:20px;
+  
+  
+}
+.logo a{
+  text-decoration: none;
+  color:#625548;
+  font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6255481c;
+    
+  }
+  
+  li {
+    float: left;
+    
+  }
+  
+  li a {
+    display: block;
+    color: #625548;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    
+  }
+  
+  li a:hover {
+    transition: 0.5s;
+    background-color: #625548;
+    color:white;
+  }
+
+
+.parent {
+    display:flex;
+    justify-content: center; /* Centrera innehållet horisontellt */
+    
+    height: 70vh;
+    width: 90vw;
+      
+    
+}
+
+.child1{
+  
+    flex:30%;
+    padding-left:20px;
+    color: #625548;  
+    
+}
+  
+.child2 {
+  
+    text-align: center;
+    flex:20%;
+    margin-left:10%;
+    color: #625548;
+     
+}
+
+
+.child1 img{
+  max-width: 50%;
+    
+} 
+
+.viewbag, .viewdata{
+  background-color: #62554831;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 300px;
+  padding:20px;
+}
+
+input{
+  margin-top:10px;
+}
+.addbutton{
+  padding:5px;
+  border-radius: 5px;
+  border: 1px solid #625548;
+  transition: transform 0.3s ease; /* Lägg till en övergångseffekt för transformeringar */
+
+}
+.addbutton.clicked {
+  transform: scale(1.1); /* Förstorar knappen lite när den klickas */
+}
+
+.singlesong{
+  background-color: #62554831;
+  padding:10px;
+  margin-bottom: 10px;
+}
+
+.partial-content{
+  padding-left:50px;
+  padding-right:20px;
+  max-width: 500px; 
+}
+
+.about{
+  padding-left:20px;
+  max-width: 50vw;
+  letter-spacing: 0.15em;
+}
+
+.form-group{
+  padding-top:10px;
+}
+
+.text-danger{
+  color:red;
+}
+
+}
+
+
+.singlesong{
+  font-size: 0,5em;
+  background-color: #62554831;
+  padding:10px;
+  margin-bottom: 10px;
+}
+
+.child1 img{
+  max-width: 50%;
+    
+} 
+.logo{
+  font-size: 2.5em;
+  padding-left:20px;
+  padding-top:20px;
+  
+  
+}
+.logo a{
+  text-decoration: none;
+  color:#625548;
+  font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6255481c;
+    
+  }
+  
+  li {
+    float: left;
+    
+  }
+  
+  li a {
+    display: block;
+    color: #625548;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    
+  }
+  
+  li a:hover {
+    transition: 0.5s;
+    background-color: #625548;
+    color:white;
+  }
+

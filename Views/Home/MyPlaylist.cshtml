@@ -1,0 +1,108 @@
+@model moment2.Models.PlaylistModel;
+
+
+@{
+    ViewData["Title"] = "Edit my playlist";
+}
+
+
+
+<div class=parent>
+
+    <div class="child1">
+        <h1>Add songs to my playlist</h1>
+        
+
+        <!--Formulär för att lägga till en ny låt i Playlist-->
+        <form method="post">
+
+            <div class="form-group">
+                <label asp-for="Song"></label>
+                <input asp-for="Song" class="form-control">
+                <span asp-validation-for="Song" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Album"></label>
+                <input asp-for="Album" class="form-control">
+                <span asp-validation-for="Album" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+            <label>Album version:</label><br>
+            <div>
+                <input type="radio" asp-for="AlbumVersion" value="Stolen Version">
+                <label>Stolen Version</label>
+            </div>
+
+            <div>
+                <input type="radio" asp-for="AlbumVersion" value="Original">
+                <label>Original</label>
+            </div>
+
+            <div>
+                <input type="radio" asp-for="AlbumVersion" value="Taylor Swifts Version">
+                <label>Taylor Swifts Version</label>
+            </div>
+            <span asp-validation-for="AlbumVersion" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Year"></label>
+                <input asp-for="Year" class="form-control">
+                <span asp-validation-for="Year" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Genre"></label>
+                <select asp-for="Genre" class="form-control">
+                    <option value="">Select genre...</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Country">Country</option>
+                    <option value="Folk">Folk</option>
+                </select>
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+
+    
+
+
+            <div class="form-group">
+            <label>Feelings:</label><br>
+            <div>
+                <input type="checkbox" name="Tags" value="Happy">
+                <label>Happy</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="Tags" value="Sad">
+                <label>Sad</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="Tags" value="Angry">
+                <label>Angry</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="Tags" value="Relaxing">
+                <label>Relaxing</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="Tags" value="Energetic">
+                <label>Energetic</label>
+            </div>
+        
+
+            <span asp-validation-for="Tags" class="text-danger"></span>
+            </div>
+
+                <input class="addbutton" type="submit" value="Add song">
+        </form>
+
+    </div>
+
+<!--Skriver ut Partial-->
+<partial name="_MyPartialView" />
+</div>

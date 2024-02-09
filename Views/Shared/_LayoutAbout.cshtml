@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/styles.css" type="text/css" rel="stylesheet" media="all">
+    <title>Moment 2 | @ViewData["Title"]</title>
+</head>
+<body>
+
+    
+
+    
+
+    <!--Knappar för att ändra färg på backgrund, samt återgå till ordinarie färger-->
+    <div class="changecolor">
+        <button id="colorButton">Change Background Color</button>
+        <button id="resetButton">Reset to Original Color</button>
+    </div>
+            
+    <main>
+        @RenderBody()
+    </main>
+<div class="logo">
+        <a asp-controller="Home" asp-action="Index"> TAYLOR SWIFT </a>       
+    </div>
+
+
+
+    <nav>
+        <ul>
+        <li><a asp-controller="Home" asp-action="Index"> Home </a></li>
+        <li><a asp-controller="Home" asp-action="MyPlaylist"> My Playlist </a></li>
+        <li><a asp-controller="Home" asp-action="About"> About Taylor </a></li>
+        </ul>
+    </nav>
+  
+    <script src="~/js/script.js"></script>
+</body>
+</html>
